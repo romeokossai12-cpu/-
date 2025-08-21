@@ -1,0 +1,8 @@
+# save_data.py
+username = input("أدخل اسم المستخدم: ")
+password = input("أدخل كلمة السر: ")
+
+with open("users.txt", "a") as file:
+    file.write(f"{username},{password}\n")
+
+print("تم الحفظ بنجاح ✅")
